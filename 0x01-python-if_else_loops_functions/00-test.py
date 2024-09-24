@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-str = "apple"
+str = "apple98 is coming TODAY"
 for x in str:
-    print('{}'.format(ord(x)))
+    if 97 <= ord(x) <= 122:
+        print('{}'.format(chr((ord(x)) - 32)), end="")
